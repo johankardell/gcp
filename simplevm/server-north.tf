@@ -3,7 +3,7 @@ resource "google_compute_instance" "north1" {
   machine_type = "n1-standard-1"
   zone         = "europe-north1-a"
 
-  tags = ["web"]
+  tags = ["web", "ping"]
 
   boot_disk {
     initialize_params {
@@ -33,7 +33,7 @@ resource "google_compute_instance" "north2" {
   machine_type = "n1-standard-1"
   zone         = "europe-north1-a"
 
-  tags = ["worker"]
+  tags = ["worker", "ping"]
 
   boot_disk {
     initialize_params {
